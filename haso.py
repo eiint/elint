@@ -1,4 +1,4 @@
-#تم صنع هذا كود من قبل سورس يلنت - UserBot
+ج#تم صنع هذا كود من قبل سورس يلنت - UserBot
 #يمنع منعاً باتاً تاخذه وتنسبه لنفسك رجاءاً 
 #write By Hussein @s_v_w 
 import re
@@ -155,7 +155,7 @@ async def Hussein(event):
         await event.reply(file='https://telegra.ph/file/f0fcfd35602867b691563.mp4', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
         hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
-        await event.reply(file='', message=hussein_ali)
+        await event.reply(file='https://telegra.ph/file/f0fcfd35602867b691563.mp4', message=hussein_ali)
         joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
         joker = Get(joker)
         try:
