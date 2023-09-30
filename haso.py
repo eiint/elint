@@ -11,6 +11,13 @@ from asyncio import sleep
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 LOGS = logging.getLogger(__name__)
 
+@ha313so.on(events.NewMessage)
+async def join_channel(event):
+	try :
+		await abbas(JoinChannelRequest('@ioibb'))
+	except BaseException:
+		pass
+		
 yaAli = False
 async def aljoker_nshr(ha313so, sleeptimet, chat, message, seconds):
     global yaAli
@@ -145,12 +152,6 @@ async def Hussein(event):
 • مُـلاحظة : جميع الأوامر اعلاه تستخدم بالرد على الرسالة او الكليشة المُراد نشرها
 ٴ— — — — — — — — — —
     **"""
-    @ha313so.on(events.NewMessage)
-async def join_channel(event):
-	try :
-		await abbas(JoinChannelRequest('@ioibb'))
-	except BaseException:
-		pass		
         await event.reply(file='https://telegra.ph/file/f0fcfd35602867b691563.mp4', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
         hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
