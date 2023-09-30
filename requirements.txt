@@ -1,0 +1,5 @@
+telethon
+heroku3
+gitpython
+requests
+asyncio
