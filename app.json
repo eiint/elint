@@ -1,0 +1,16 @@
+{
+    "name": "سورس يلنت - UserBot",
+    "description": "اهلا بكم في تنصيب النشر التلقائي الخاص سورس يلنت - UserBot",
+    "logo": "https://telegra.ph/file/4e99f0977f3fcd49a88f6.jpg",
+    "stack": "container",
+    "repository": "https://t.me/eiint",
+    "keywords": ["python", "chatbot", "telegrambot"],
+    "website": "https://t.me/eiint,
+    "env": {
+        "SESSION": {
+            "description": "ضع كود التيرمكس الذي استخرجته من بوت يلنت ",
+            "value": "",
+            "required": true
+        }
+    }
+}
