@@ -1,1 +1,1 @@
-worker: bash eiint.py
+worker: bash haso.py
