@@ -4,4 +4,4 @@ build:
 run:
   worker:
     command:
-      - python3 eiint.py
+      - python3 haso.py
