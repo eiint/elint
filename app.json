@@ -5,7 +5,7 @@
     "stack": "container",
     "repository": "https://t.me/eiint",
     "keywords": ["python", "chatbot", "telegrambot"],
-    "website": "https://t.me/eiint,
+    "website": "https://t.me/eiint",
     "env": {
         "SESSION": {
             "description": "ضع كود التيرمكس الذي استخرجته من بوت يلنت ",
