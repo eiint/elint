@@ -190,9 +190,10 @@ async def Hussein(event):
 • مُـلاحظة : جميع الأوامر اعلاه تستخدم بالرد على الرسالة او الكليشة المُراد نشرها
 ٴ— — — — — — — — — —**"""
         
+    await event.reply(file='https://telegra.ph/file/dab0098fe59a6a8f6f938.mp4', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
-        hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
-        await event.reply(file=''https://telegra.ph/file/dab0098fe59a6a8f6f938.mp4, message=hussein_ali)
+        hussein_ali = "السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل .الاوامر"
+        await event.reply(file='https://telegra.ph/file/dab0098fe59a6a8f6f938.mp4', message=hussein_ali)
         joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
         joker = Get(joker)
         try:
