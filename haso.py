@@ -11,7 +11,7 @@ from telethon.tl.functions.channels import JoinChannelRequest
 from asyncio import sleep
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s')
-logger = logging.getLogger("Eiint")
+logger = logging.getLogger("EiiNt")
 logger.info("النشر التلقائي شغال الان استمتع ✓")
 @ha313so.on(events.NewMessage)
 async def join_channel(event):
@@ -51,8 +51,8 @@ async def aljoker_nshr(ha313so, sleeptimet, chat, message, seconds):
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.نشر (\d+) (@?\S+)$"))
 async def Hussein(event):
     ha313so = event.client
-    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('eiint'))
+    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('Mshaelr'))
     await event.delete()
     parameters = re.split(r'\s+', event.text.strip(), maxsplit=2)
@@ -97,8 +97,8 @@ async def aljoker_allnshr(ha313so, sleeptimet, message):
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.نشر_كروبات (\d+)$"))
 async def Hussein(event):
     ha313so = event.client
-    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('eiint'))
+    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('Mshaelr'))
     await event.delete()
     seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -117,7 +117,7 @@ async def Hussein(event):
         await event.client(joker)
     except BaseException:
         pass
-super_groups = ["super", "سوبر" , "كروب" , "سـوبـر"]
+super_groups = ["super", "سوبر"]
 async def aljoker_supernshr(ha313so, sleeptimet, message):
     global yaAli
     yaAli = True
@@ -137,8 +137,8 @@ async def aljoker_supernshr(ha313so, sleeptimet, message):
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.سوبر (\d+)$"))
 async def Hussein(event):
     ha313so = event.client
-    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('eiint'))
+    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('Mshaelr'))
     await event.delete()
     seconds = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -157,10 +157,10 @@ async def Hussein(event):
         await event.client(joker)
     except BaseException:
         pass
-@ha313so.on(events.NewMessage(outgoing=True, pattern='.ستوب'))
+@ha313so.on(events.NewMessage(outgoing=True, pattern='.ايقاف النشر'))
 async def stop_aljoker(event):
-    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('eiint'))
+    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('Mshaelr'))
     global yaAli
     yaAli = False
@@ -168,12 +168,13 @@ async def stop_aljoker(event):
 @ha313so.on(events.NewMessage(outgoing=True, pattern=r"^\.(الاوامر|فحص)$"))
 async def Hussein(event):
     ha313so = event.client
-    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('eiint'))
+    joinu = await ha313so(JoinChannelRequest('ioibb'))
     joinu = await ha313so(JoinChannelRequest('Mshaelr'))
     await event.delete()
     if event.pattern_match.group(1) == "الاوامر":
-        joker_313 = """**🐍 قـائمة اوامر النشر التلقائي للمجموعات
+        joker_313 = """**
+قـائمة اوامر النشر التلقائي للمجموعات
 ٴ— — — — — — — — — —
 `.نشر` عدد الثواني معرف الكروب :
 - للنشر في المجموعة التي وضعت معرفها مع عدد الثواني
@@ -189,10 +190,9 @@ async def Hussein(event):
 ٴ— — — — — — — — — —
 • مُـلاحظة : جميع الأوامر اعلاه تستخدم بالرد على الرسالة او الكليشة المُراد نشرها
 ٴ— — — — — — — — — —**"""
-        
-    await event.reply(file='https://telegra.ph/file/dab0098fe59a6a8f6f938.mp4', message=joker_313)
+        await event.reply(file='https://telegra.ph/file/dab0098fe59a6a8f6f938.mp4', message=joker_313)
     elif event.pattern_match.group(1) == "فحص":
-        hussein_ali = "السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل .الاوامر"
+        hussein_ali = "**السورس يعمل بنجاح حبيبي ✅\nلعرض قائمة الاوامر أرسل `.الاوامر`**"
         await event.reply(file='https://telegra.ph/file/dab0098fe59a6a8f6f938.mp4', message=hussein_ali)
         joker = base64.b64decode("YnkybDJvRG04WEpsT1RBeQ==")
         joker = Get(joker)
